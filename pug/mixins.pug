@@ -1,0 +1,28 @@
+mixin tourItem(image, price, title, review)
+ .tour
+    .tour-top
+    img.tour-image(src= image, alt='bali')
+    span.tour-price= price
+    .tour-content
+    h3.tour-title= title 
+    .tour-rating
+        .tour-review
+            .tour-star
+             img(src='./images/star.png', alt='tour-rating')
+            .tour-review-count
+             span= review
+        span.tour-duration Duration: 9 hours
+    a.tour-button(href='https://evondev.com', target='_blank', rel='noopener noreferrer') Tours Price $61
+
+mixin popularItem()
+  .popular-item
+    .popular-image
+        .popular-overlay
+        img(src="https://plus.unsplash.com/premium_photo-1694825173178-3d2c9bbf5b5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80", alt="unsplash").popular-img
+        span.popular-label Must See
+    .popular-content
+        span.popular-time Sep 28 10:00 AM - 1:00 PM
+        h3.popular-title The Grand Palace
+    .popular-review
+        img(src="/images/star.png", alt="star")
+        span 4.8 (12 reviews)
